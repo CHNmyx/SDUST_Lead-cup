@@ -17,6 +17,7 @@ Implementing environment:
 本项目研究基于GraphSAGE模型，针对动态图数据处理中的挑战，提出了改进的节点特征表达方法。通过融入时序信息，增强模型对网络动态演化特征的捕获能力。同时，本研究还采用多种优化策略，以提升模型的整体性能。这些改进不仅有助于更好地理解和预测动态网络的演化规律，也为实际应用提供了更有效的解决方案。
 ## Setup
 ### Training
+```shell
 parser.add_argument("--dataset", type=str, default="DGraphFin")
 parser.add_argument("--model", type=str, default="GEARSage")
 parser.add_argument("--device", type=int, default=0)  # 默认使用 GPU 0
@@ -25,10 +26,12 @@ parser.add_argument("--hiddens", type=int, default=96)
 parser.add_argument("--layers", type=int, default=3)
 parser.add_argument("--dropout", type=float, default=0.3)
 parser.add_argument("--batch_size", type=int, default=5000)  # 默认批次大小为 5000
+```
 ### 直接使用
+```shell
 python3 main.py
 python3 main.py --batch_size 2000 --device 0
-
+```
 
 # 边属性时序融合与颗粒流动力学模拟 Graph Network Simulator (GNS)
 ## 项目出发点
