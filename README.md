@@ -1,3 +1,6 @@
+# 面向动态系统的图神经网络建模方法研究及边属性时序融合与颗粒流动力学模拟
+# Research on Graph Neural Network Modeling Method for Dynamic Systems and Temporal fusion of edge properties and simulation of particle flow dynamics
+
 # Environments
 Implementing environment:  
 - numpy = 1.23.1  
@@ -8,6 +11,8 @@ Implementing environment:
 
 
 # SAGE
+# 项目出发点
+本项目研究基于GraphSAGE模型，针对动态图数据处理中的挑战，提出了改进的节点特征表达方法。通过融入时序信息，增强模型对网络动态演化特征的捕获能力。同时，本研究还采用多种优化策略，以提升模型的整体性能。这些改进不仅有助于更好地理解和预测动态网络的演化规律，也为实际应用提供了更有效的解决方案。
 ## Setup
 ### Training
 parser.add_argument("--dataset", type=str, default="DGraphFin")
@@ -24,7 +29,11 @@ python3 main.py --batch_size 2000 --device 0
 
 
 # Graph Network Simulator (GNS)
-In this project, we use machine learning framework Graph Neural Network-based Simulators (GNS) as a surrogate model to predict granular and fluid flow dynamics.
+# 项目出发点
+本项目希望利用基于图神经网络的模拟器（Graph Neural Network-based Simulators，GNS）这一机器学习框架，作为替代模型来预测颗粒流与流体流动的动态行为，本项目在Sanchez-Gonzalez（2020）与Choi（2023）提出的GNS框架基础上加以扩展，完成了以下任务：
+1. 通过模拟颗粒柱或水滴塌落过程以及其与障碍物的相互作用，展示GNN在建模颗粒流动力学方面的有效性。
+2. 探讨这些不同的GNN聚合操作之间对模型来预测颗粒流与流体流动的结果差异，并对这种差异寻找一种解释。
+## Setup
 ## Run GNS
 > Training GNS on simulation data
 ```shell
