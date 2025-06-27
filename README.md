@@ -1,4 +1,5 @@
 # 智能计算创新设计赛(先导杯)山东科技大学校内赛-参赛作品
+# This project is qualified for participation in the "National Pioneer Cup on Intelligent Computing – Shandong University of Science and Technology Selection
 > Project Members: MenYX, FengX, ShengHF, ZhaoLY
 # 面向动态系统的图神经网络建模方法研究及边属性时序融合与颗粒流动力学模拟
 ## Research on Graph Neural Network Modeling Method for Dynamic Systems and Temporal fusion of edge properties and simulation of particle flow dynamics
